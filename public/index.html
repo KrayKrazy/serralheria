@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nó de Ferro Serralheria | A Arte em Ferro e Fogo</title>
+    <meta name="description" content="Serralheria especializada em portões, grades e estruturas metálicas. Qualidade e robustez para seu projeto.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/logo.jpg" alt="Nó de Ferro Logo" id="header-logo">
+                <span class="brand-name">NÓ DE FERRO</span>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"></path></svg>
+                    <input type="text" id="service-search" placeholder="Buscar serviços (ex: portão, grade)...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>A Arte em Ferro e <span class="accent">Fogo</span></h1>
+            <p>Transformamos metal em segurança e design para sua residência ou empresa.</p>
+        </section>
+
+        <section class="filters-container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="portao">Portões</button>
+                <button class="filter-btn" data-filter="grade">Grades</button>
+                <button class="filter-btn" data-filter="estrutura">Estruturas</button>
+                <button class="filter-btn" data-filter="custom">Sob Medida</button>
+            </div>
+        </section>
+
+        <section class="grid-container">
+            <div class="service-grid" id="service-grid">
+                <!-- Cards will be injected by JS or hardcoded -->
+                <div class="service-card" data-category="grade">
+                    <div class="card-image">
+                        <img src="assets/imgi_8_562676011_17862834300499677_3648488622127318990_n.jpg" alt="Grade de Proteção">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tag">Grade</div>
+                        <h3>Cercas e Grades</h3>
+                        <p>Segurança máxima com design robusto para fechamento de lotes e áreas verdes.</p>
+                        <div class="card-footer">
+                            <span class="recipe-meta">#ferro #segurança</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="estrutura">
+                    <div class="card-image">
+                        <img src="assets/imgi_6_639626258_17877012975499677_1899503367994678838_n.jpg" alt="Estrutura Metálica">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tag">Estrutura</div>
+                        <h3>Estruturas Metálicas</h3>
+                        <p>Coberturas, pergolados e suportes de alta resistência para áreas externas.</p>
+                        <div class="card-footer">
+                            <span class="recipe-meta">#engenharia #cobertura</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="estrutura">
+                    <div class="card-image">
+                        <img src="assets/imgi_7_575307680_17864976639499677_6533161017579067400_n.jpg" alt="Estrutura Residencial">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tag">Estrutura</div>
+                        <h3>Coberturas e Varandas</h3>
+                        <p>Soluções estruturais para ampliação de espaços e proteção contra intempéries.</p>
+                        <div class="card-footer">
+                            <span class="recipe-meta">#residencial #varanda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="portao">
+                    <div class="card-image">
+                        <img src="assets/imgi_5_642350946_17878008858499677_7491825918214884083_n.jpg" alt="Portão Basculante">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tag">Portão</div>
+                        <h3>Portões Automáticos</h3>
+                        <p>Variedade em modelos basculantes, deslizantes e pivotantes sob medida.</p>
+                        <div class="card-footer">
+                            <span class="recipe-meta">#automação #design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="custom">
+                    <div class="card-image">
+                        <img src="assets/imgi_9_563279964_17862214212499677_2032413112037808407_n.jpg" alt="Trabalho em Ferro">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tag">Custom</div>
+                        <h3>Projetos Especiais</h3>
+                        <p>Mobiliário industrial, decorações e peças exclusivas em ferro forjado.</p>
+                        <div class="card-footer">
+                            <span class="recipe-meta">#arte #exclusividade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-card">
+                <h2>Pronto para iniciar seu projeto?</h2>
+                <p>Entre em contato diretamente com o proprietário para um orçamento personalizado.</p>
+                <a href="https://wa.me/5561994110143?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20a%20Nó%20de%20Ferro!" class="whatsapp-btn" id="whatsapp-cta">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.185-.573c.948.527 1.927.815 3.144.815 3.18 0 5.765-2.587 5.766-5.766 0-3.18-2.586-5.766-5.764-5.766zm3.392 8.221c-.142.399-.815.746-1.125.789-.309.043-.585.076-.99-.06-.245-.082-.565-.191-.948-.354-1.639-.695-2.722-2.36-2.805-2.47-.082-.11-.671-.891-.671-1.699 0-.808.423-1.205.572-1.37.149-.165.325-.207.433-.207.108 0 .217.001.311.005.101.004.232-.039.363.277.132.316.453 1.103.493 1.187.04.084.066.182.01.294-.057.112-.086.182-.171.282-.084.099-.177.221-.253.296-.084.083-.171.174-.074.341.096.166.425.702.91 1.135.624.556 1.148.73 1.315.813.166.083.265.069.363-.044.099-.113.425-.494.538-.663.113-.169.227-.141.381-.084.154.056.977.461 1.146.545.17.084.283.127.324.197.041.07.041.408-.101.807z" fill="currentColor"></path></svg>
+                    (61) 99411-0143
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Nó de Ferro Serralheria. Todos os direitos reservados.</p>
+        <p class="developer-tag">Designed with <span class="heart">❤</span> by Antigravity</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
